@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Images\check.png" />
+		<None Remove="Images\close.png" />
+		<None Remove="Images\copy-dark.png" />
+		<None Remove="Images\cross.png" />
+		<None Remove="Images\downloads.png" />
+		<None Remove="Images\photo.png" />
+		<None Remove="Images\plus.png" />
+		<None Remove="Images\resize-bottom-right.png" />
+		<None Remove="Images\resize-horizontal.png" />
+		<None Remove="Images\resize-top-right.png" />
+		<None Remove="Images\resize-vertical.png" />
+		<None Remove="Images\right-arrow-dark.png" />
+		<None Remove="Images\right-arrow.png" />
+		<None Remove="Images\snip.png" />
+		<None Remove="Images\target.png" />
+		<None Remove="Images\translation.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Images\check.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\close.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\copy-dark.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\cross.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\downloads.png">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\photo.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\plus.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\resize-bottom-right.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\resize-horizontal.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\resize-top-right.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\resize-vertical.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\right-arrow-dark.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\right-arrow.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\snip.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\target.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\translation.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
+		<PackageReference Include="MvvmLight" Version="5.4.1.1" />
+		<PackageReference Include="Tesseract" Version="5.2.0" />
+	</ItemGroup>
+
+</Project>
