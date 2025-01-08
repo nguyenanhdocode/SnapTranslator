@@ -25,6 +25,7 @@
 		<None Remove="Images\snip.png" />
 		<None Remove="Images\target.png" />
 		<None Remove="Images\translation.png" />
+		<None Remove="SupportLangs.json" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -76,16 +77,28 @@
 		<Content Include="Images\translation.png">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="Models\" />
+		<Content Include="SupportLangs.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
 		<PackageReference Include="MvvmLight" Version="5.4.1.1" />
 		<PackageReference Include="Tesseract" Version="5.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="tessdata\eng.traineddata">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="tessdata\vie.traineddata">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Hotkeys\" />
 	</ItemGroup>
 
 </Project>

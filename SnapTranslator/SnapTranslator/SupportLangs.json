@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Name": "Tiếng Anh",
+    "TessCode": "eng",
+    "GoogleCode": "en"
+  },
+  {
+    "Name": "Tiếng Việt",
+    "TessCode": "vie",
+    "GoogleCode": "vi"
+  },
+  {
+    "Name": "Tiếng Trung (Phồn thể)",
+    "TessCode": "chi_tra",
+    "GoogleCode": "zh-TW"
+
+  },
+  {
+    "Name": "Tiếng Trung (Giản thể)",
+    "TessCode": "chi_sim",
+    "GoogleCode": "zh-CN"
+  }
+]
